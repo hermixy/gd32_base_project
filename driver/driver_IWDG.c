@@ -9,7 +9,7 @@
 #if ENABLE_IWDG_DRV
 static int32_t drv_IWDG_init		(void)
 {
-   // bsp_IWDG_init();
+    bsp_IWDG_init();
     return 0;
 }
 

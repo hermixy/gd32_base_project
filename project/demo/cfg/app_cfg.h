@@ -3,7 +3,7 @@
 
 //#define SYS_TICK_PERIO  20  //ms
 //-------debug
-#define DEBUG_BUF_SIZE 512
+#define DEBUG_BUF_SIZE 128
 #define TINY_FUNC_CODE     0    //1-disable shell cmd item  0-enable shell cmd item
 
 

@@ -17,6 +17,8 @@
 #include "autotest.h"
 #include "flash_part.h"
 
+#define MCU_HEADER	"gd32f3x0.h"
+
 //hal_dev
 //  dev is device    drv is driver 
 #define ARRY_ITEMS_NUM(n) 		(sizeof(n)/sizeof(n[0]))

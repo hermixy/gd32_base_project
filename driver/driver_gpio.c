@@ -38,15 +38,11 @@ static int32_t drv_gpio_read		(uint8_t *dest, uint32_t len	, uint32_t offset, ui
 
 static int32_t drv_gpio_ctrl		(uint32_t ctrl_cmd, uint8_t *pDest, uint32_t len, uint32_t *p_real)
 {
-//	if(ctrl_cmd==CHG_IO_MODE_IN)
-//	{
-//		//bsp_gpio_change_mode((uint8_t)len,1);
-//	}
-//	
-//	if(ctrl_cmd==CHG_IO_MODE_OUT)
-//	{
-//		//bsp_gpio_change_mode((uint8_t)len,0);
-//	}
+	uint8_t ch = (uint8_t)len;
+	if(ctrl_cmd==GPIO_TOGGLE_MODE)
+	{
+		bsp_gpio_pin_toggle(ch);
+	}
 	
     return 0;
 }

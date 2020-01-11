@@ -4,9 +4,8 @@
 //#include "debug.h"
 #include "x_frame.h"
 
-#include "gd32e10x.h"	//if use default compiler version 6, you need open it
 
-
+#include MCU_HEADER	//if use default compiler version 6, you need open it
 
 int main(void)
 {
